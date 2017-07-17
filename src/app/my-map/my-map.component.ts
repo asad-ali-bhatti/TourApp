@@ -8,6 +8,7 @@ import {LatLng, MarkerManager, GoogleMapsAPIWrapper} from "@agm/core";
   providers: [MarkerManager, GoogleMapsAPIWrapper]
 })
 export class MyMapComponent {
+  // Coordinates of Germany
   lat: number = 51.097322;
   lng: number = 10.378885;
   markers: Marker[] = [];
@@ -19,7 +20,6 @@ export class MyMapComponent {
   }
 
   mapClick(e){
-    console.log(e);
     this.addMarker({lat: e.coords.lat, lng: e.coords.lng, draggable: true})
   }
 }
