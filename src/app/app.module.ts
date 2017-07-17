@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { AgmCoreModule } from '@agm/core'
+import { AgmCoreModule } from '@agm/core';
+import { MyMapComponent } from './my-map/my-map.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyMapComponent
   ],
   imports: [
     BrowserModule,
