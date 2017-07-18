@@ -1,0 +1,8 @@
+<div class="form-group">
+  Start: <input placeholder="Enter source location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #pickupInput [formControl]="destinationInput">
+  End: <input placeholder="Enter destination" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #pickupOutput [formControl]="destinationOutput" >
+</div>
+
+<sebm-google-map [latitude]="lat" [longitude]="lng" (mapClick)="mapClick($event)">
+  <sebm-google-map-directions [origin]="'frankfurt, germany'" [destination]="'berlin, germany'"></sebm-google-map-directions>
+</sebm-google-map>
